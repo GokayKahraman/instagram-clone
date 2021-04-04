@@ -1,33 +1,31 @@
 <template>
-  <div>
-    <CustomText class="a1" tag="p">hello vue</CustomText>
-    <CustomText class="a2" tag="p" size="small">hello vue</CustomText>
-    <CustomText class="a3" tag="p" size="xsmall">hello vue</CustomText>
-    <IconHome />
+  <div class="app">
+    <MasterHeader />
+
+    <main class="main">
+      <Container>
+        <router-view />
+      </Container>
+    </main>
   </div>
 </template>
 
 <script>
-import CustomText from './components/CustomText'
-import IconHome from './assets/icons/home.svg'
+import MasterHeader from '@/components/Header'
+import Container from '@/components/Container'
 
 export default {
-  name: 'Home',
+  name: 'App',
   components: {
-    CustomText,
-    IconHome
+    Container,
+    MasterHeader
   }
 }
 </script>
 
 <style scoped>
-.a1 {
-  color: rgba(var(--ba8), 0.5);
-}
-.a2 {
-  color: rgb(var(--cdd));
-}
-.a3 {
-  color: rgb(var(--ba8));
+.main {
+  padding-top: 40px;
 }
 </style>
+
