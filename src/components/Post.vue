@@ -41,17 +41,9 @@
       </button>
     </div>
 
-    <!-- view count -->
-
     <div class="view-count section">
       <custom-text tag="b">1.345 beğenme</custom-text>
     </div>
-
-    <!-- comment list -->
-
-    <!-- datetime -->
-
-    <!-- comment form -->
   </div>
 </template>
 
